@@ -35,8 +35,252 @@
         </nav>
     </header>
 
-    <main>
-        <img src="..\img\logo2.jpg" width="400" height="400" alt="член">
+
+    <main class="page-catalog conteiner">
+
+        <h1 class="page-title">Что бы посмотреть?</h1>
+
+        <ul class="breadcrumbs">
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="Games.html">Что смотрю или смотрел</a>
+            </li>
+            <li class="breadcrumbs-current">
+                Фильмы и сериалы
+            </li>
+
+        </ul>
+        <section class="filters">
+            <h2>Фильтр</h2>
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+                <fieldset>
+                    <legend>Жанр</legend>
+                    <ul>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="action"
+                                id="filter-action">
+                            <label class="filter-action" for="filter-action">Экшн</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="role-playing"
+                                id="filter-role-playing">
+                            <label class="filter-role-playing" for="filter-role-playing">Ролевая</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="MOBA"
+                                id="filter-MOBA">
+                            <label class="filter-MOBA" for="filter-MOBA">MOBA</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="RPG"
+                                id="filter-RPG">
+                            <label class="filter-RPG" for="filter-RPG">Рпг</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="Co-op"
+                                id="filter-Co-op">
+                            <label class="filter-Co-op" for="filter-Co-op">Co-op</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Оценка</legend>
+                    <ul>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-1-2"
+                                id="1-2">
+                            <label for="1-2">1-2</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-2-3"
+                                id="2-3">
+                            <label for="2-3">2-3</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-3-4"
+                                id="3-4">
+                            <label for="3-4">3-4</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-4-5"
+                                id="4-5">
+                            <label for="4-5">4-5</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Режиссёры</legend>
+                    <ul>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="directors Гай Ричи" id="Гай Ричи">
+                            <label for="Гай Ричи">Гай Ричи</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="directors Obsidian Entertainment" id="Obsidian Entertainment">
+                            <label for="Obsidian Entertainment">Obsidian Entertainment</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="directors Skog Zorro Wilnyl Philip thePetHen"
+                                id="Skog Zorro Wilnyl Philip thePetHen">
+                            <label for="Skog Zorro Wilnyl Philip thePetHen">Skog Zorro Wilnyl Philip thePetHen</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="directors Zeekerss"
+                                id="Zeekerss">
+                            <label for="Zeekerss">Zeekerss</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox" name="directors Valve"
+                                id="Valve">
+                            <label for="Valve">Valve</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Год выхода</legend>
+                    <ul>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2015" id="2015">
+                            <label for="2015">2015</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2016" id="2016">
+                            <label for="2016">2016</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2017" id="2017">
+                            <label for="2017">2017</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2018" id="2018">
+                            <label for="2018">2018</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2019" id="2019">
+                            <label for="2019">2019</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2020" id="2020">
+                            <label for="2020">2020</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2021" id="2021">
+                            <label for="2021">2021</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2022" id="2022">
+                            <label for="2022">2022</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2023" id="2023">
+                            <label for="2023">2023</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                            <input class="filter-input-checkbox filter-input" type="checkbox"
+                                name="year of release 2024" id="2024">
+                            <label for="2024">2024</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+            </form>
+        </section>
+
+        <section class="catalog">
+            <h2>Список фильмов и сериалов</h2>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <a href="Card.html">
+                        <h3>
+                            <span class="catalog-category">MOBA</span>
+                            <span class="catalog-item-title">Dota 2</span>
+                        </h3>
+                        <p class="catalog-item-image">
+                            <img src="..\img\game1dota2.jpg" width="220" height="165" alt="Dota 2">
+                        </p>
+                    </a>
+                    <p class="catalog-item-price">
+                        <b>Бесплатно</b><br>
+                        <button class="button" type="button">Играть</button>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <a href="Card.html">
+                        <h3>
+                            <span class="catalog-category">Co-op</span>
+                            <span class="catalog-item-title">Lethal Company</span>
+                        </h3>
+                        <p class="catalog-item-image">
+                            <img src="..\img\game2lethalcompany.jpg" width="220" height="165" alt="Lethal Company">
+                        </p>
+                    </a>
+                    <p class="catalog-item-price">
+                        <b>385 рублей</b><br>
+                        <button class="button" type="button">Играть</button>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <a href="Card.html">
+                        <h3>
+                            <span class="catalog-category">Co-op</span>
+                            <span class="catalog-item-title">Grounded</span>
+                        </h3>
+                        <p class="catalog-item-image">
+                            <img src="..\img\4957fde4d7a3bb60679633b094d11e0d.jpg" width="220" height="165"
+                                alt="Grounded">
+                        </p>
+                    </a>
+                    <p class="catalog-item-price">
+                        <b>2322 рублей</b><br>
+                        <button class="button" type="button">Играть</button>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <a href="Card.html">
+                        <h3>
+                            <span class="catalog-category">Co-op</span>
+                            <span class="catalog-item-title">Content Warning</span>
+                        </h3>
+                        <p class="catalog-item-image">
+                            <img src="..\img\hqdefault.jpg" width="220" height="165" alt="Content Warning">
+                        </p>
+                    </a>
+                    <p class="catalog-item-price">
+                        <b>320 рублей</b><br>
+                        <button class="button" type="button">Играть</button>
+                    </p>
+                </li>
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item">
+                    <a href="#">1</a>
+                </li>
+                <li class="pagination-item pagination-item-current"">
+                  <a>2</a>
+                </li>
+                <li class=" pagination-item">
+                    <a href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#">4</a>
+                </li>
+            </ul>
+        </section>
+
     </main>
 
     <footer class="main-footer">
