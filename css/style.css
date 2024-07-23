@@ -27,6 +27,11 @@ body {
   background-image: url("../img/1614439790_57-p-temnii-fon-dlya-saita-61.jpg"); 
   background-position: top center;
   background-repeat: no-repeat;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 
@@ -46,13 +51,26 @@ img {
   background-color: var(--basic-black);
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
 /* Main navigation */
 
 .main-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-white);
   background-color: transparent;
+}
+
+/* Logo */
+
+.main-header-logo {
+  order: 1;
 }
 
 .main-navigation-wrapper {
