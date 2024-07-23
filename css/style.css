@@ -71,9 +71,16 @@ img {
 
 .main-header-logo {
   order: 1;
+  justify-self: center;
+}
+
+.main-header-bar {
+  background-color: var(--basic-black);
 }
 
 .main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
   background-color: var(--basic-black);
 }
 
