@@ -82,6 +82,11 @@ img {
   justify-self: center;
 }
 
+.main-header-logo2 {
+  order: 0;
+  
+}
+
 .main-header-bar {
   background-color: var(--basic-black);
 }
