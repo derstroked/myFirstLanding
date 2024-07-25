@@ -75,7 +75,11 @@ img {
   margin-bottom: 40px;
 }
 
-
+.page-product {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  align-content: start;
+}
 
 /* Main header */
 
