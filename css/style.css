@@ -81,6 +81,15 @@ img {
   align-content: start;
 }
 
+.page-product .page-title {
+  grid-column: 1 / -1;
+}
+
+.page-product .breadcrumbs {
+  grid-column: 1 / -1;
+  margin-bottom: 40px;
+}
+
 /* Main header */
 
 .main-header {
