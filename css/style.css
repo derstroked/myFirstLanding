@@ -191,6 +191,32 @@ img {
   background-color: var(--basic-extra-dark);
 }
 
+/* Login link */
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  width: 16px;
+  height: 18px;
+  background-image: url("img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+  opacity: 1;
+}
+
+.user-navigation .login-link {
+  padding-left: 50px;
+  position: relative;
+}
+
 /* Features */
 
 .features {
@@ -211,8 +237,23 @@ img {
 }
 
 .feature-item h3 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 60px;
   font-size: 30px;
   line-height: 42px;
+}
+
+.feature-item h3::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background-color: var(--basic-white);
+  transform: rotate(45deg);
 }
 
 .feature-item p {
@@ -222,14 +263,17 @@ img {
 /* Index columns */
 
 .index-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
   margin-bottom: 35px;
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  background-image: url("img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image:
+    url("img/line.png"),
+    url("img/pattern-light.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
@@ -239,20 +283,76 @@ img {
 
 /* News */
 
+.news {
+  width: 380px;
+}
+
 .news-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
   list-style: none;
+}
+
+.news-item {
+  margin-bottom: 25px;
+}
+
+.news-item p {
+  margin: 0;
+}
+
+.news-item time {
+  text-transform: none;
 }
 
 /* Gallery */
 
+.gallery {
+  width: 300px;
+}
+
+.gallery-container {
+  position: relative;  
+  height: 260px;
+  
+  outline: 5px solid #ff0000;
+}
+
 .gallery-content {
+  height: 164px;
+  margin: 0;
   background-color: var(--basic-dark);
   border: 7px solid var(--basic-white);
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery-button {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-button-back {
+  left: 0;
+}
+
+.gallery-button-next {
+  right: 0;
 }
 
 /* Button */
 
 .button {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 30px;
   font: inherit;
   text-align: center;
   color: var(--basic-white);
