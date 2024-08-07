@@ -110,17 +110,26 @@ img {
 }
 
 .inner-page .main-header {
+  margin-bottom: 70px;
   background-color: var(--basic-black);
 }
 
 /* Main navigation */
 
 .main-navigation {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-white);
   background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: var(--basic-black);
 }
 
 /* Container */
@@ -129,6 +138,15 @@ img {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.main-navigation .container {
+  display: flex;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Logo */
@@ -169,6 +187,11 @@ img {
   padding: 0;
   list-style: none;
   min-height: 70px;
+  
+}
+
+.site-navigation-current {
+  position: relative;
 }
 
 .site-navigation-current a:not([href]) {
@@ -176,6 +199,15 @@ img {
 }
 
 /* User navigation */
+
+.user-navigation {
+  max-width: 140px;
+  
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
+}
 
 .site-navigation a,
 .user-navigation a {
@@ -198,6 +230,7 @@ img {
   position: absolute;
   top: 27px;
   left: 24px;
+
   width: 16px;
   height: 18px;
   background-image: url("img/login.svg");
@@ -225,15 +258,16 @@ img {
 
 .features-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .feature-item {
+  width: 300px;
   text-align: center;
+  
 }
 
 .feature-item h3 {
@@ -316,7 +350,6 @@ img {
   position: relative;  
   height: 260px;
   
-  outline: 5px solid #ff0000;
 }
 
 .gallery-content {
