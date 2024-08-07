@@ -233,7 +233,7 @@ img {
 
   width: 16px;
   height: 18px;
-  background-image: url("img/login.svg");
+  background-image: url("../img/login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -304,8 +304,8 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
   background-image:
-    url("img/line.png"),
-    url("img/pattern-light.jpg");
+    url("../img/line.png"),
+    url("../img/pattern-light.jpg");
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
 }
@@ -373,7 +373,7 @@ img {
 .inner-page {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  background-image: url("img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -554,13 +554,30 @@ img {
   margin-bottom: 15px;
 }
 
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .appointment-item {
+  width: 140px;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
+.appointment-item label {
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+
 .appointment-item input {
   width: 140px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  padding-left: 15px;
   font: inherit;
   background-color: transparent;
   border: 2px solid var(--basic-black);
@@ -572,6 +589,8 @@ img {
 }
 
 .appointment .button {
+  display: block;
+  width: 100%;
   margin-top: 10px;
   margin-right: 0;
 }
@@ -660,7 +679,7 @@ img {
   margin-top: 65px;
   color: var(--basic-white);
   background-color: var(--basic-extra-dark);
-  background-image: url("img/pattern-dark.jpg");
+  background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -669,7 +688,7 @@ img {
   margin-top: 45px;
   background-image:
     linear-gradient(to bottom, black, transparent),
-    url("img/pattern-dark.jpg");
+    url("../img/pattern-dark.jpg");
   background-size: 10px 40px, auto;
   background-position: 0 0;
   background-repeat: repeat-x, repeat;
@@ -706,6 +725,9 @@ img {
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 141px;
   margin: 0 auto;
   padding: 0;
@@ -745,6 +767,12 @@ img {
 /* Social button */
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  background-color: var(--basic-black);
   color: inherit;
 }
 
@@ -753,16 +781,9 @@ img {
   background-color: var(--basic-white);
 }
 
-.footer-copyright {
-  max-width: 150px;
-  margin: 0;
-  justify-self: end;
-}
-
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+.social-button:hover path,
+.social-button:focus path {
+  fill: var(--basic-black);
 }
 
 /* Modal */
@@ -771,7 +792,7 @@ img {
   display: none;
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  background-image: url("img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
