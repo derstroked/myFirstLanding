@@ -45,6 +45,19 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Grid */
 
 .page {
@@ -149,9 +162,13 @@ img {
 /* Site Navigation */
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
   margin: 0;
   padding: 0;
   list-style: none;
+  min-height: 70px;
 }
 
 .site-navigation-current a:not([href]) {
@@ -163,6 +180,8 @@ img {
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-white);
+  display: block;
+  padding: 25px 20px;
 }
 
 .site-navigation a:hover,
