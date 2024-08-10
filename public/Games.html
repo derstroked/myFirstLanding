@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html  class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <title>Во что катаю</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
@@ -13,24 +13,20 @@
 <body class="page-body inner-page">
 
   <header class="main-header">
-    <nav class="main-navigation">
-      <div class="main-header-bar">
-        <div class="main-navigation-wrapper">
-          <a class="main-header-logo" href="index.html">
-            <img src="..\img\logo12.jpg" width="300" height="250" alt="Логотип Чмохи">
-          </a>
-          <ul class="site-navigation">
-            <li><a href="Info.html">Информация</a></li>
-            <li><a href="News.html">Новости</a></li>
-            <li><a href="Play-list.html">Что в ушах играет</a></li>
-            <li><a class="site-navigation-current" href="Games.html">Во что катаю </a></li>
-            <li><a href="Watch.html">Что смотрю</a></li>
-            <li><a href="Rescript.html">Рескрипт</a></li>
-          </ul>
-          <div class="user-navigation">
-            <a href="blank.html">Вход</a>
-          </div>
-        </div>
+    <nav class="main-navigation container">
+      <a class="main-header-logo" href="index.html">
+        <img src="..\img\logo12.jpg" width="300" height="250" alt="Логотип Чмохи">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="Info.html">Информация</a></li>
+        <li><a href="News.html">Новости</a></li>
+        <li><a href="Play-list.html">Что в ушах играет</a></li>
+        <li><a class="site-navigation-current" href="Games.html">Во что катаю </a></li>
+        <li><a href="Watch.html">Что смотрю</a></li>
+        <li><a href="Rescript.html">Рескрипт</a></li>
+      </ul>
+      <div class="user-navigation">
+        <a class="login-link" href="blank.html">Вход</a>
       </div>
     </nav>
   </header>
@@ -52,55 +48,55 @@
     </ul>
 
     <section class="filters">
-      <h2>Фильтр</h2>
+      <h2 class="visually-hidden">Фильтр</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Жанр</legend>
           <ul>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="action" id="filter-action">
-              <label  for="filter-action">Экшн</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="action" id="filter-action">
+              <label for="filter-action">Экшн</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="role-playing"
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="role-playing"
                 id="filter-role-playing">
-              <label  for="filter-role-playing">Ролевая</label>
+              <label for="filter-role-playing">Ролевая</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="MOBA" id="filter-MOBA">
-              <label  for="filter-MOBA">MOBA</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="MOBA" id="filter-MOBA">
+              <label for="filter-MOBA">MOBA</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="RPG" id="filter-RPG">
-              <label  for="filter-RPG">Рпг</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="RPG" id="filter-RPG">
+              <label for="filter-RPG">Рпг</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="Co-op" id="filter-Co-op">
-              <label  for="filter-Co-op">Co-op</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Co-op" id="filter-Co-op">
+              <label for="filter-Co-op">Co-op</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="Adventure" id="filter-Adventure">
-              <label  for="filter-Adventure">Приключение</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Adventure" id="filter-Adventure">
+              <label for="filter-Adventure">Приключение</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="Arcade" id="filter-Arcade">
-              <label  for="filter-Arcade">Аркада</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Arcade" id="filter-Arcade">
+              <label for="filter-Arcade">Аркада</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="Races" id="filter-Races">
-              <label  for="filter-Races">Гонки</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Races" id="filter-Races">
+              <label for="filter-Races">Гонки</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="Addition" id="filter-Addition">
-              <label  for="filter-Addition">Дополнение</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Addition" id="filter-Addition">
+              <label for="filter-Addition">Дополнение</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="Strategy" id="filter-Strategy">
-              <label  for="filter-Strategy">Стратегия</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Strategy" id="filter-Strategy">
+              <label for="filter-Strategy">Стратегия</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="Simulator" id="filter-Simulator">
-              <label  for="filter-Simulator">Симулятор</label>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Simulator" id="filter-Simulator">
+              <label for="filter-Simulator">Симулятор</label>
             </li>
           </ul>
         </fieldset>
@@ -108,39 +104,39 @@
           <legend>Оценка</legend>
           <ul>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-1-2" id="1-2">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-1-2" id="1-2">
               <label for="1-2">1-2</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-2-3" id="2-3">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-2-3" id="2-3">
               <label for="2-3">2-3</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-3-4" id="3-4">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-3-4" id="3-4">
               <label for="3-4">3-4</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-4-5" id="4-5">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-4-5" id="4-5">
               <label for="4-5">4-5</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-5-6" id="5-6">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-5-6" id="5-6">
               <label for="5-6">5-6</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-6-7" id="6-7">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-6-7" id="6-7">
               <label for="6-7">6-7</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-7-8" id="7-8">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-7-8" id="7-8">
               <label for="7-8">7-8</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-8-9" id="8-9">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-8-9" id="8-9">
               <label for="8-9">8-9</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="estimation-9-10" id="9-10">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="estimation-9-10" id="9-10">
               <label for="9-10">9-10</label>
             </li>
           </ul>
@@ -149,126 +145,147 @@
           <legend>Разработчики</legend>
           <ul>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer CD PROJEKT RED"
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer CD PROJEKT RED"
                 id="CD PROJEKT RED">
               <label for="CD PROJEKT RED">CD PROJEKT RED</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Obsidian Entertainment"
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Obsidian Entertainment"
                 id="Obsidian Entertainment">
               <label for="Obsidian Entertainment">Obsidian Entertainment</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox"
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
                 name="developer Skog Zorro Wilnyl Philip thePetHen" id="Skog Zorro Wilnyl Philip thePetHen">
               <label for="Skog Zorro Wilnyl Philip thePetHen">Skog Zorro Wilnyl Philip thePetHen</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Zeekerss" id="Zeekerss">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Zeekerss" id="Zeekerss">
               <label for="Zeekerss">Zeekerss</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Valve" id="Valve">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Valve" id="Valve">
               <label for="Valve">Valve</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Bethesda Game Studios" id="Bethesda Game Studios">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Bethesda Game Studios"
+                id="Bethesda Game Studios">
               <label for="Bethesda Game Studios">Bethesda Game Studios</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Irrational Games" id="Irrational Games">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Irrational Games"
+                id="Irrational Games">
               <label for="Irrational Games">Irrational Games</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Capcom" id="Capcom">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Capcom" id="Capcom">
               <label for="Capcom">Capcom</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Motive Studio" id="Motive Studio">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Motive Studio"
+                id="Motive Studio">
               <label for="Motive Studio">Motive Studio</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Piranha Bytes" id="Piranha Bytes">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Piranha Bytes"
+                id="Piranha Bytes">
               <label for="Piranha Bytes">Piranha Bytes</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Supergiant Games" id="Supergiant Games">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Supergiant Games"
+                id="Supergiant Games">
               <label for="Supergiant Games">Supergiant Games</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Arkane Studios" id="Arkane Studios">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Arkane Studios"
+                id="Arkane Studios">
               <label for="Arkane Studios">Arkane Studios</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Monolith Productions" id="Monolith Productions">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Monolith Productions"
+                id="Monolith Productions">
               <label for="Monolith Productions">Monolith Productions</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Crowbar Collective" id="Crowbar Collective">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Crowbar Collective"
+                id="Crowbar Collective">
               <label for="Crowbar Collective">Crowbar Collective</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Remedy Entertainment" id="Remedy Entertainment">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Remedy Entertainment"
+                id="Remedy Entertainment">
               <label for="Remedy Entertainment">Remedy Entertainment</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Irrational Games" id="Irrational Games">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Irrational Games"
+                id="Irrational Games">
               <label for="Irrational Games">Irrational Games</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer PopCap Games" id="PopCap Games">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer PopCap Games"
+                id="PopCap Games">
               <label for="PopCap Games">PopCap Games</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer tobyfox" id="tobyfox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer tobyfox" id="tobyfox">
               <label for="tobyfox">tobyfox</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer 4A Games" id="4A Games">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer 4A Games" id="4A Games">
               <label for="4A Games">4A Games</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Tango Gameworks" id="Tango Gameworks">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Tango Gameworks"
+                id="Tango Gameworks">
               <label for="Tango Gameworks">Tango Gameworks</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Piranha Bytes" id="Piranha Bytes">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Piranha Bytes"
+                id="Piranha Bytes">
               <label for="Piranha Bytes">Piranha Bytes</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Hinterland Studio Inc." id="Hinterland Studio Inc.">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Hinterland Studio Inc."
+                id="Hinterland Studio Inc.">
               <label for="Hinterland Studio Inc.">Hinterland Studio Inc.</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer CD Projekt RED" id="CD Projekt RED">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer CD Projekt RED"
+                id="CD Projekt RED">
               <label for="CD Projekt RED">CD Projekt RED</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Digital Extremes" id="Digital Extremes">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Digital Extremes"
+                id="Digital Extremes">
               <label for="Digital Extremes">Digital Extremes</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Relic Entertainment" id="Relic Entertainment">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Relic Entertainment"
+                id="Relic Entertainment">
               <label for="Relic Entertainment">Relic Entertainment</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer 11 bit studios" id="11 bit studios">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer 11 bit studios"
+                id="11 bit studios">
               <label for="11 bit studios">11 bit studios</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer id Software" id="id Software">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer id Software"
+                id="id Software">
               <label for="id Software">id Software</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer EA Los Angeles" id="EA Los Angeles">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer EA Los Angeles"
+                id="EA Los Angeles">
               <label for="EA Los Angeles">EA Los Angeles</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer Overhype Studios" id="Overhype Studios">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer Overhype Studios"
+                id="Overhype Studios">
               <label for="Overhype Studios">Overhype Studios</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="developer 4A Games" id="4A Games">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="developer 4A Games" id="4A Games">
               <label for="4A Games">4A Games</label>
             </li>
           </ul>
@@ -277,95 +294,95 @@
           <legend>Год выхода</legend>
           <ul>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2003" id="2003">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2003" id="2003">
               <label for="2003">2003</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2004" id="2004">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2004" id="2004">
               <label for="2004">2004</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2005" id="2005">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2005" id="2005">
               <label for="2005">2005</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2006" id="2006">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2006" id="2006">
               <label for="2006">2006</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2007" id="2007">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2007" id="2007">
               <label for="2007">2007</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2008" id="2008">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2008" id="2008">
               <label for="2008">2008</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2009" id="2009">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2009" id="2009">
               <label for="2009">2009</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2010" id="2010">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2010" id="2010">
               <label for="2010">2010</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2011" id="2011">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2011" id="2011">
               <label for="2011">2011</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2012" id="2012">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2012" id="2012">
               <label for="2012">2012</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2013" id="2013">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2013" id="2013">
               <label for="2013">2013</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2014" id="2014">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2014" id="2014">
               <label for="2014">2014</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2015" id="2015">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2015" id="2015">
               <label for="2015">2015</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2015" id="2015">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2015" id="2015">
               <label for="2015">2015</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2016" id="2016">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2016" id="2016">
               <label for="2016">2016</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2017" id="2017">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2017" id="2017">
               <label for="2017">2017</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2018" id="2018">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2018" id="2018">
               <label for="2018">2018</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2019" id="2019">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2019" id="2019">
               <label for="2019">2019</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2020" id="2020">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2020" id="2020">
               <label for="2020">2020</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2021" id="2021">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2021" id="2021">
               <label for="2021">2021</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2022" id="2022">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2022" id="2022">
               <label for="2022">2022</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2023" id="2023">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2023" id="2023">
               <label for="2023">2023</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="year of release 2024" id="2024">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="year of release 2024" id="2024">
               <label for="2024">2024</label>
             </li>
           </ul>
@@ -375,13 +392,15 @@
     </section>
 
     <section class="catalog">
-      <h2>Список игр</h2>
+      <h2 class="visually-hidden">Список игр</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Dota 2</span>
-              <span class="catalog-category"><p>MOBA</p></span>
+              <span class="catalog-category">
+                <p>MOBA</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Dota 2-poster-1.jpeg" width="220" height="165" alt="Dota 2">
@@ -396,7 +415,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Lethal Company</span>
-              <span class="catalog-category"><p>Co-op</p></span>
+              <span class="catalog-category">
+                <p>Co-op</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Lethal Company-poster-1.jpeg" width="220" height="165" alt="Lethal Company">
@@ -411,7 +432,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Grounded</span>
-              <span class="catalog-category"><p>Co-op</p></span>
+              <span class="catalog-category">
+                <p>Co-op</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Grounded-poster-1.jpeg" width="220" height="165" alt="Grounded">
@@ -426,7 +449,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Content Warning</span>
-              <span class="catalog-category"><p>Co-op</p></span>
+              <span class="catalog-category">
+                <p>Co-op</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Content Warning-poster-1.jpeg" width="220" height="165" alt="Content Warning">
@@ -441,10 +466,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">The Elder Scrolls V: Skyrim</span>
-              <span class="catalog-category"><p>Экшн Ролевая</p></span>
+              <span class="catalog-category">
+                <p>Экшн Ролевая</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-The Elder Scrolls V-Skyrim-poster-1.jpeg" width="220" height="165" alt="The Elder Scrolls V: Skyrim">
+              <img src="..\img\Game-The Elder Scrolls V-Skyrim-poster-1.jpeg" width="220" height="165"
+                alt="The Elder Scrolls V: Skyrim">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -456,7 +484,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">BioShock Infinite</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-BioShock Infinite-poster-1.jpeg" width="220" height="165" alt="BioShock Infinite">
@@ -471,10 +501,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Resident Evil 2 Remake</span>
-              <span class="catalog-category"><p>Экшн Приключение</p></span>
+              <span class="catalog-category">
+                <p>Экшн Приключение</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-Resident Evil 2 Remake-poster-1.jpeg" width="220" height="165" alt="Resident Evil 2 Remake">
+              <img src="..\img\Game-Resident Evil 2 Remake-poster-1.jpeg" width="220" height="165"
+                alt="Resident Evil 2 Remake">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -486,7 +519,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Dead Space</span>
-              <span class="catalog-category"><p>Экшн Приключение</p></span>
+              <span class="catalog-category">
+                <p>Экшн Приключение</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Dead Space-poster-1.jpeg" width="220" height="165" alt="Dead Space">
@@ -501,10 +536,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Gothic 2: Night of the Raven</span>
-              <span class="catalog-category"><p>Ролевая</p></span>
+              <span class="catalog-category">
+                <p>Ролевая</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-Gothic 2-Night of the Raven-poster-1.jpeg" width="220" height="165" alt="Gothic 2: Night of the Raven">
+              <img src="..\img\Game-Gothic 2-Night of the Raven-poster-1.jpeg" width="220" height="165"
+                alt="Gothic 2: Night of the Raven">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -516,7 +554,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">FlatOut 2</span>
-              <span class="catalog-category"><p>Аркада Гонки</p></span>
+              <span class="catalog-category">
+                <p>Аркада Гонки</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-FlatOut 2-poster-1.jpeg" width="220" height="165" alt="FlatOut 2">
@@ -531,10 +571,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Call of Duty: Modern Warfare 2</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-Call of Duty-Modern Warfare 2-poster-1.jpeg" width="220" height="165" alt="Call of Duty: Modern Warfare 2">
+              <img src="..\img\Game-Call of Duty-Modern Warfare 2-poster-1.jpeg" width="220" height="165"
+                alt="Call of Duty: Modern Warfare 2">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -546,7 +589,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Far Cry 3</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Far Cry 3-poster-1.jpeg" width="220" height="165" alt="Far Cry 3">
@@ -561,7 +606,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Hades</span>
-              <span class="catalog-category"><p>Экшн Приключение Ролевая</p></span>
+              <span class="catalog-category">
+                <p>Экшн Приключение Ролевая</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Hades-poster-1.jpeg" width="220" height="165" alt="Hades">
@@ -576,7 +623,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Prey</span>
-              <span class="catalog-category"><p>Экшн Приключение Ролевая</p></span>
+              <span class="catalog-category">
+                <p>Экшн Приключение Ролевая</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Prey-poster-1.jpeg" width="220" height="165" alt="Prey">
@@ -591,10 +640,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">F.E.A.R.: First Encounter Assault Recon</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-F.E.A.R.-First Encounter Assault Recon-poster-1.jpeg" width="220" height="165" alt="F.E.A.R.: First Encounter Assault Recon">
+              <img src="..\img\Game-F.E.A.R.-First Encounter Assault Recon-poster-1.jpeg" width="220" height="165"
+                alt="F.E.A.R.: First Encounter Assault Recon">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -606,7 +658,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Black Mesa</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Black Mesa-poster-1.jpeg" width="220" height="165" alt="Black Mesa">
@@ -621,10 +675,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Max Payne 2: The Fall of Max Payne</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-Max Payne 2-The Fall of Max Payne-poster-1.jpeg" width="220" height="165" alt="Max Payne 2: The Fall of Max Payne">
+              <img src="..\img\Game-Max Payne 2-The Fall of Max Payne-poster-1.jpeg" width="220" height="165"
+                alt="Max Payne 2: The Fall of Max Payne">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -636,10 +693,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">BioShock Infinite: Burial at Sea - Episode Two</span>
-              <span class="catalog-category"><p>Экшн Дополнение</p></span>
+              <span class="catalog-category">
+                <p>Экшн Дополнение</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-BioShock Infinite-Burial at Sea - Episode Two-poster-1.jpeg" width="220" height="165" alt="BioShock Infinite: Burial at Sea - Episode Two">
+              <img src="..\img\Game-BioShock Infinite-Burial at Sea - Episode Two-poster-1.jpeg" width="220"
+                height="165" alt="BioShock Infinite: Burial at Sea - Episode Two">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -651,7 +711,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Plants vs. Zombies</span>
-              <span class="catalog-category"><p>Аркада Стратегия</p></span>
+              <span class="catalog-category">
+                <p>Аркада Стратегия</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Plants vs. Zombies-poster-1.jpeg" width="220" height="165" alt="Plants vs. Zombies">
@@ -666,7 +728,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Undertale</span>
-              <span class="catalog-category"><p>Ролевая</p></span>
+              <span class="catalog-category">
+                <p>Ролевая</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Undertale-poster-1.jpeg" width="220" height="165" alt="Undertale">
@@ -681,7 +745,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Metro 2033</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Metro 2033-poster-1.jpeg" width="220" height="165" alt="Metro 2033">
@@ -696,7 +762,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">The Evil Within 2</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-The Evil Within 2-poster-1.jpeg" width="220" height="165" alt="The Evil Within 2">
@@ -711,7 +779,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Risen</span>
-              <span class="catalog-category"><p>Ролевая</p></span>
+              <span class="catalog-category">
+                <p>Ролевая</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Risen-poster-1.jpeg" width="220" height="165" alt="Risen">
@@ -726,7 +796,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">The Long Dark</span>
-              <span class="catalog-category"><p>Экшн Симулятор Стратегия</p></span>
+              <span class="catalog-category">
+                <p>Экшн Симулятор Стратегия</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-The Long Dark-poster-1.jpeg" width="220" height="165" alt="The Long Dark">
@@ -741,10 +813,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">The Witcher 3: Wild Hunt</span>
-              <span class="catalog-category"><p>Экшн Ролевая</p></span>
+              <span class="catalog-category">
+                <p>Экшн Ролевая</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-The Witcher 3-Wild Hunt-poster-1.jpeg" width="220" height="165" alt="The Witcher 3: Wild Hunt">
+              <img src="..\img\Game-The Witcher 3-Wild Hunt-poster-1.jpeg" width="220" height="165"
+                alt="The Witcher 3: Wild Hunt">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -756,7 +831,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">The Darkness II</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-The Darkness II-poster-1.jpeg" width="220" height="165" alt="The Darkness II">
@@ -771,10 +848,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Warhammer 40.000: Dawn of War 2</span>
-              <span class="catalog-category"><p>Стратегия</p></span>
+              <span class="catalog-category">
+                <p>Стратегия</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-Warhammer 40.000-Dawn of War 2-poster-1.jpeg" width="220" height="165" alt="Warhammer 40.000: Dawn of War 2">
+              <img src="..\img\Game-Warhammer 40.000-Dawn of War 2-poster-1.jpeg" width="220" height="165"
+                alt="Warhammer 40.000: Dawn of War 2">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -786,10 +866,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">This War of Mine: The Little Ones</span>
-              <span class="catalog-category"><p>Стратегия</p></span>
+              <span class="catalog-category">
+                <p>Стратегия</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-This War of Mine-The Little Ones-poster-1.jpeg" width="220" height="165" alt="This War of Mine: The Little Ones">
+              <img src="..\img\Game-This War of Mine-The Little Ones-poster-1.jpeg" width="220" height="165"
+                alt="This War of Mine: The Little Ones">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -801,7 +884,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Quake II</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Quake II-poster-1.jpeg" width="220" height="165" alt="Quake II">
@@ -816,10 +901,13 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">The Lord of the Rings: The Battle for Middle-earth</span>
-              <span class="catalog-category"><p>Стратегия</p></span>
+              <span class="catalog-category">
+                <p>Стратегия</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
-              <img src="..\img\Game-The Lord of the Rings-The Battle for Middle-earth-poster-1.jpeg" width="220" height="165" alt="The Lord of the Rings: The Battle for Middle-earth">
+              <img src="..\img\Game-The Lord of the Rings-The Battle for Middle-earth-poster-1.jpeg" width="220"
+                height="165" alt="The Lord of the Rings: The Battle for Middle-earth">
             </p>
           </a>
           <p class="catalog-item-price">
@@ -831,7 +919,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Battle Brothers</span>
-              <span class="catalog-category"><p>Стратегия</p></span>
+              <span class="catalog-category">
+                <p>Стратегия</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Battle Brothers-poster-1.jpeg" width="220" height="165" alt="Battle Brothers">
@@ -846,7 +936,9 @@
           <a href="Game.html">
             <h3>
               <span class="catalog-item-title">Metro: Last Light</span>
-              <span class="catalog-category"><p>Экшн</p></span>
+              <span class="catalog-category">
+                <p>Экшн</p>
+              </span>
             </h3>
             <p class="catalog-item-image">
               <img src="..\img\Game-Metro-Last Light-poster-1.jpeg" width="220" height="165" alt="Metro: Last Light">
@@ -862,10 +954,10 @@
         <li class="pagination-item pagination-item-current">
           <a href="#">1</a>
         </li>
-        <li class="pagination-item ">
+        <li class="pagination-item">
           <a>2</a>
         </li>
-        <li class=" pagination-item">
+        <li class="pagination-item">
           <a href="#">3</a>
         </li>
         <li class="pagination-item">
@@ -875,11 +967,11 @@
     </section>
   </main>
 
-  <footer class="page-footer main-footer">
+  <footer class="main-footer">
 
     <div class="container">
       <section class="footer-contacts">
-        <h2>Как до меня добраться. А оно тебе надо?</h2>
+        <h2 class="visually-hidden">Как до меня добраться. А оно тебе надо?</h2>
         <p>
           Чмохина Житуха<br>
           Адрес: г.Пупкино ул.Залупкино 3а-49 <br>
@@ -893,19 +985,18 @@
         <ul>
           <li>
             <a class="social-button" href="#">
-              <span>Вконтакте</span>
-              <svg width="36" height="25" viewBox="0 0 135 75">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="27" height="16" viewBox="0 0 128 76">
                 <path
                   d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z"
                   fill="#fff" />
               </svg>
-
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <span>Телеграм</span>
-              <svg width="36" height="25" viewBox="0 0 15 24">
+              <span class="visually-hidden">Телеграм</span>
+              <svg width="32" height="22" viewBox="0 0 22 24">
                 <path
                   d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12.43 8.85893C11.2629 9.3444 8.93015 10.3492 5.43191 11.8733C4.86385 12.0992 4.56628 12.3202 4.53919 12.5363C4.4934 12.9015 4.95073 13.0453 5.57349 13.2411C5.6582 13.2678 5.74598 13.2954 5.83596 13.3246C6.44866 13.5238 7.27284 13.7568 7.70131 13.766C8.08996 13.7744 8.52375 13.6142 9.00266 13.2853C12.2712 11.079 13.9584 9.96381 14.0643 9.93977C14.1391 9.92281 14.2426 9.90148 14.3128 9.96385C14.3829 10.0262 14.3761 10.1443 14.3686 10.176C14.3233 10.3691 12.5281 12.0381 11.5991 12.9018C11.3095 13.171 11.1041 13.362 11.0621 13.4056C10.968 13.5034 10.8721 13.5958 10.78 13.6846C10.2108 14.2333 9.78393 14.6448 10.8036 15.3168C11.2937 15.6397 11.6858 15.9067 12.077 16.1731C12.5042 16.4641 12.9303 16.7543 13.4816 17.1157C13.6221 17.2078 13.7562 17.3034 13.8869 17.3965C14.3841 17.751 14.8308 18.0694 15.3826 18.0186C15.7033 17.9891 16.0345 17.6876 16.2027 16.7884C16.6002 14.6632 17.3816 10.0585 17.5622 8.16098C17.5781 7.99473 17.5582 7.78197 17.5422 7.68858C17.5262 7.59518 17.4928 7.46211 17.3714 7.3636C17.2276 7.24694 17.0057 7.22234 16.9064 7.22408C16.455 7.23204 15.7626 7.47282 12.43 8.85893Z"
                   fill="#fff"></path>
@@ -914,8 +1005,8 @@
           </li>
           <li>
             <a class="social-button" href="#">
-              <span>Почта</span>
-              <svg width="36" height="25" viewBox="0 0 40 35">
+              <span class="visually-hidden">Почта</span>
+              <svg width="40" height="30" viewBox="0 0 48 50">
                 <path d="M13.39,12.15V38.54H7.06A2.56,2.56,0,0,1,4.5,36V16.82" fill="#fff"></path>
                 <path d="M34.61,12.15V38.54h6.33A2.56,2.56,0,0,0,43.5,36V16.82" fill="#fff"></path>
                 <path
@@ -937,22 +1028,22 @@
 
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
-    <p class="modal-descriptoin">Введите свой логин и пароль, если не говноед</p>
+    <p class="modal-description">Введите свой логин и пароль, если не говноед</p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 
       <p>
-        <label for="login-login">Логин</label>
+        <label class="visually-hidden" for="login-login">Логин</label>
         <input class="login-icon-user" type="email" name="login" id="login-login" placeholder="email(собака)вговне.com">
       </p>
 
       <p>
-        <label for="login-password">Пароль</label>
+        <label class="visually-hidden" for="login-password">Пароль</label>
         <input class="login-icon-password" type="password" name="password" id="login-password" placeholder="********">
       </p>
 
       <p class="login-help">
         <label class="login-checkbox">
-          <input type="checkbox" name="remember">
+          <input class="visually-hidden" type="checkbox" name="remember">
           <span class="checkbox-indicator"></span>
           Я тебя запомнил пёс
         </label>
