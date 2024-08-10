@@ -29,8 +29,6 @@
   background-repeat: no-repeat;
 }
 
-
-
 a {
   text-decoration: none;
 }
@@ -121,10 +119,30 @@ img {
   background-color: transparent;
 }
 
+.inner-page .main-navigation {
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .main-navigation-wrapper {
   width: 100%;
   margin-bottom: 60px;
   background-color: var(--basic-black);
+}
+
+/* Logo */
+
+.main-header-logo {
+  order: 2;
+  width: 368px;
+  height: 153px;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 /* Container */
@@ -142,34 +160,6 @@ img {
 .main-navigation-wrapper .container {
   display: flex;
   justify-content: space-between;
-}
-
-/* Logo */
-
-.inner-page .main-navigation-wrapper {
-  grid-template-columns: 170px 1fr min-content;
-}
-
-.main-header-logo {
-  order: 1;
-  justify-self: center;
-}
-
-.inner-page .main-header-logo {
-  order: 0;
-}
-
-.main-header-bar {
-  background-color: var(--basic-black);
-}
-
-.main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-  background-color: var(--basic-black);
 }
 
 /* Site Navigation */
@@ -196,7 +186,6 @@ img {
 
 .user-navigation {
   max-width: 140px;
-  
 }
 
 .inner-page .user-navigation {
@@ -224,7 +213,6 @@ img {
   position: absolute;
   top: 27px;
   left: 24px;
-
   width: 16px;
   height: 18px;
   background-image: url("../img/login.svg");
@@ -425,6 +413,9 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs a {
