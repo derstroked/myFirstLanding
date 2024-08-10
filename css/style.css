@@ -489,8 +489,8 @@ img {
 }
 
 .catalog-item-image {
-  width: 220px;
-  height: 165px;
+  width: 225px;
+  height: 210px;
   margin: 0;
   object-fit: contain;
   background-color: #f7f7f7;
@@ -524,7 +524,7 @@ img {
 
 .catalog-item-price b {
   width: 112px;
-  padding: 13px 25px 11px;
+  padding: 13px 10px 11px;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 20px;
@@ -541,14 +541,44 @@ img {
 
 /* Filters */
 
+.filters {
+  width: 180px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.filter fieldset:first-child {
+  margin-bottom: 35px;
+}
+
 .filter legend {
+  margin-bottom: 26px;
   font-size: 24px;
   line-height: 30px;
 }
 
 .filter ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
   line-height: 18px;
+}
+
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 45px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
 .filter-input-checkbox:hover+label,
@@ -556,15 +586,76 @@ img {
   color: var(--special);
 }
 
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+}
 
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -38px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -36px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.filter-button {
+  padding-right: 30px;
+  padding-left: 30px;
+}
 
 /* Pagination */
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
+.pagination-item {
+  margin-right: 5px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
 .pagination-item a {
+  display: block;
+  padding: 10px 19px;
   color: var(--basic-white);
   background-color: var(--basic-black);
 }
@@ -751,7 +842,7 @@ img {
 
 .main-footer .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contacts {
